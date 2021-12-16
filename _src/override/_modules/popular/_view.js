@@ -24,6 +24,7 @@ import styles from '@app/_modules/auth_signin/styles';
 const Views = ({t, prod, loading, onNavigateToProductDetail}) => {
   const theme = useTheme();
   const {background} = _.get(theme, 'colors');
+
   return (
     <SafeAreaView style={[styles.container, {backgroundColor: background}]}>
       <AppBar useBack title="Popular Products" />

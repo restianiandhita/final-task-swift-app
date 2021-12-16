@@ -1,4 +1,6 @@
 /* eslint-disable prettier/prettier */
+/* eslint-disable eslint-comments/no-unused-disable */
+/* eslint-disable prettier/prettier */
 /* eslint-disable eol-last */
 /* eslint-disable prettier/prettier */
 /* eslint-disable max-len */
@@ -10,7 +12,7 @@ import {navigateTo} from '@app/helpers/Navigation';
 import {modules} from '@root/swift.config';
 import {customUseQuery} from '@app/hooks/customApolloHooks';
 import Views from '@root/_src/override/_modules/popular_products/_view';
-import { GET_POPULAR_PRODUCTS } from './service/schema';
+import { GET_POPULAR_PRODUCTS } from '@app/_modules/popular/service/schema';
 
 const PopularProductController = props => {
   if (!modules.auth_signin.enable) {
@@ -51,7 +53,8 @@ const PopularProductController = props => {
   };
 
   return <Views loading={loading} prod={products} 
-  onNavigateToProductDetail={onNavigateToProductDetail} {...props} {...controllerProps}
+  onNavigateToProductDetail={onNavigateToProductDetail} 
+  {...props} {...controllerProps}
    />;
 };
 

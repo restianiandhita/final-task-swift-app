@@ -7,6 +7,7 @@ import {SafeAreaView} from 'react-native-safe-area-context';
 import BannerSlider from '@app/components/BannerSlider';
 import CategorySlider from '@app/components/AddonCategorySlider';
 import ProductSlider from '@app/components/AddonProductSlider';
+import PopularProductSlider from '@app/components/AddonPopularSlider';
 import BrandSlider from '@app/components/AddonBrandSlider';
 import Blog from '@app/components/Blog';
 import NavBar from '@app/components/NavBar';
@@ -38,10 +39,10 @@ const HomeScreen = ({bannerSlider, onNavigateTrackOrder}) => {
         <CategorySlider />
         <Divider />
 
-        <ProductSlider categoryId={44} title="Home" />
+        <ProductSlider categoryId={30} title="Home" />
         <Divider />
 
-        <ProductSlider categoryId={30} title="Popular Products" />
+        <PopularProductSlider categoryId={43} title="Popular Products" />
         <Divider />
 
         <BrandSlider />
